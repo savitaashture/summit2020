@@ -38,6 +38,7 @@ yay!!!!! RedHat Summit 2020
 ## Create Knative yamls
 As shown in the above diagram we will just replace first Kubernetes microservice with Knative Service
 ```bash
+$ kubectl delete -f yamls/k8s/first.yaml
 $ kubectl apply -f yamls/knative/first.yaml
 ```
 ```bash
