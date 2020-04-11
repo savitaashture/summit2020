@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: first
+spec:
+  template:
+    metadata:
+    spec:
+      containers:
+        - image: savita3020/first:v1
