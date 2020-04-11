@@ -8,12 +8,12 @@ import (
 )
 
 func lastHandler(w http.ResponseWriter, r *http.Request) {
-	go test()
+	//go test()
 	target := os.Getenv("TARGET")
 	if target == "" {
 		target = "RedHat Summit 2020"
 	}
-	fmt.Fprintf(w, "response from "+target)
+	fmt.Fprintf(w, "yay!!!!! "+target)
 }
 
 func test() {

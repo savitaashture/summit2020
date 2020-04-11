@@ -15,7 +15,7 @@ spec:
         app: third
     spec:
       containers:
-        - image: savita3020/third:v3
+        - image: savita3020/third:summit2020
           ports:
             - containerPort: 80
           name: third

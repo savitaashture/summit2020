@@ -15,7 +15,7 @@ spec:
         app: second
     spec:
       containers:
-        - image: savita3020/second:v1
+        - image: savita3020/second:summit2020
           ports:
             - containerPort: 80
           name: second
