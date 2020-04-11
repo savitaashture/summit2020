@@ -18,8 +18,12 @@ Below are the steps to follow in order to setup Knative and executing demo examp
 
 # Setup
 * [Follow](https://knative.dev/docs/install/any-kubernetes-cluster/#installing-the-serving-component) to install Knative and Networking solution.
+
+# Instructions
 * git clone https://github.com/savitaashture/summit2020/
 * cd summit2020
+
+## Create Kubernetes yamls
 ```bash
 $ kubectl apply -f yamls/k8s/
 ```
