@@ -30,4 +30,28 @@ $ kubectl apply -f yamls/k8s/
 ```bash
 $ kubectl get svc
 ```
-* `curl http://<minikubeIP>:<svcNodePort>/abc`
+```bash
+$ curl http://<minikubeIP>:<svcNodePort>/summit2020
+yay!!!!! RedHat Summit 2020
+```
+
+## Create Knative yamls
+As shown in the above diagram we will just replace first Kubernetes microservice with Knative Service
+```bash
+$ kubectl apply -f yamls/knative/first.yaml
+```
+```bash
+$ kubectl get ksvc
+$ kubectl get cfg
+$ kubectl get rt
+$ kubectl get rev
+```
+```bash
+$ kubectl get svc -n kourier-system
+$ kubectl get ksvc
+```
+
+```bash
+$ curl http://<minikubeIP>:<kourierServicePort>/summit2020 -H "Host: <ksvc domain name>"
+yay!!!!! RedHat Summit 2020
+```
